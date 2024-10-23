@@ -11,7 +11,7 @@ p {
 
 h1 {
     font-size: 6rem;
-    font-family: "Bodoni MT";
+    font-family: "Bodoni MT", "Garamond", 'Times New Roman', Times, serif;
     color: #30507E;
     width: 100%;
     text-align: center;
