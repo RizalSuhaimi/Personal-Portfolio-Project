@@ -1,0 +1,397 @@
+html {
+    font-size: 16px;
+    font-family: "Raleway";
+    background-color: #fff;
+    color: #3E4756;
+}
+
+p {
+    font-size: 1.125rem; /* 18px */
+}
+
+h1 {
+    font-size: 6rem;
+    font-family: "Bodoni MT";
+    color: #30507E;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.625rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.375rem;
+    font-weight: bold;
+}
+
+li {
+    color: #3E4756;
+}
+
+/* Header */
+header {
+    height: 5.5vh;
+    margin: 0;
+}
+
+header nav{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header ul {
+    width: 1210px;
+    max-width: 95%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+header li {
+    display: block;
+    font-size: 1.375rem;
+}
+
+header li.divider {
+    font-weight: bolder;
+}
+
+header li.nav {
+    padding: 5px 30px;
+    border-radius: 5%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+header li.nav:hover {
+    background-color: rgb(230, 230, 230);
+    cursor: pointer;
+}
+
+header li.nav:active {
+    background-color: #3E4756;
+    color: white;
+}
+
+/* Hero section */
+#hero {
+    height: 94.5vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+    box-sizing: border-box;
+    top: 50px;
+}
+
+.hero-panel {
+    height: 300px;
+    width: fit-content;
+    margin: auto auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-panel .tagline {
+    margin: 0 auto;
+}
+
+#hero a {
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#hero button {
+    padding: 0px;
+    margin: 0 auto;
+    background-color: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+#hero button p {
+    font-weight: 550;
+    color: #854250;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid #854250;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#hero button p:hover {
+    background-color: #d3c2c5;
+    cursor: pointer;
+}
+
+#hero button p:active {
+    background-color: #854250;
+    color: #fff;
+}
+
+.see-my-work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.see-my-work p {
+    margin: 0 30px;
+}
+
+/* Portfolio section */
+
+#portfolio {
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+#portfolio .work-panel {
+    display: flex;
+    justify-content: space-between;
+    width: 1210px;
+    box-sizing: border-box;
+    padding: 14px;
+    margin: 0 auto;
+    background-color: #30507E;
+    border-radius: 10px;
+    color: white;
+    margin: 15px auto 0;
+}
+
+img.badminton, img.pcmod {
+    display: block;
+    width: 586px;
+    height: auto;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 586px;
+}
+
+.project-info * {
+    margin: 6px 0;
+}
+
+img.html, img.css {
+    width: 40px;
+    height: 40px;
+}
+
+.project-info a {
+    width: fit-content;
+    height: fit-content;
+}
+
+.project-info button {
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #30507E;
+    border: 2px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 1.125rem;
+    font-family: Raleway;
+    font-weight: 550;
+}
+
+.project-info button:hover {
+    background-color: #3E4756;
+    cursor: pointer;
+}
+
+.project-info button:active {
+    background-color: #fff;
+    color: #30507E;
+}
+
+/* About me section */
+#about-me {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+#about-me .text {
+    width: 605px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid #30507E;
+}
+
+#about-me .text h2,
+#about-me .text p,
+#about-me .text table {
+    width: 80%;
+    margin: 5px auto;
+}
+
+#about-me .text h3 {
+    width: 80%;
+    margin: 35px auto 5px;
+    text-align: center;
+}
+
+#about-me img {
+    width: 605px;
+    height: auto;
+    border-radius: 10px;
+}
+
+td {
+    padding: 8px;
+}
+
+td:first-child {
+    text-align: right;
+}
+
+
+/* footer section */
+footer {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(226, 226, 226);
+}
+
+footer .panels-container {
+    width: 1210px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .panel {
+    width: 320px;
+}
+
+.send-message form {
+    width: 100%;
+    margin: 10px 0 0;
+}
+
+.client-contact input {
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid #3E4756;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.client-contact {
+    margin-bottom: 10px;
+}
+
+.client-message textarea {
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid #3E4756;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.submission {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.submission input {
+    margin-top: 10px;
+    color: #3E4756;
+    background-color: white;
+    border: 1px solid #3E4756;
+    border-radius: 3px;
+}
+
+footer nav {
+    width: 100%;
+    text-align: center;
+}
+
+footer nav h4 {
+    margin-bottom: 10px;
+}
+
+footer nav li {
+    margin: 5px;
+}
+
+footer nav li:hover {
+    text-decoration: underline;
+}
+
+footer nav li:active {
+    color: #30507E;
+}
+
+.socials h4, .socials div {
+    width: 100%;
+    text-align: right;
+}
+
+.socials h4 {
+    margin-bottom: 10px;
+}
+
+.socials div {
+    margin-bottom: 5px;
+}
+
+.socials .link {
+    display: flex;
+    justify-content: right;
+}
+
+.socials .link a {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: #3E4756;
+}
+
+.socials .link p {
+    font-size: 1rem;
+}
+
+footer img {
+    width: 21px;
+    height: auto;
+}
+
+.socials .link a:hover p {
+    text-decoration: underline;
+}
+
+.socials .link a:active p {
+    color: #30507E;
+}
