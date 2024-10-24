@@ -39,12 +39,6 @@ li {
     color: #3E4756;
 }
 
-/* Header */
-header {
-    height: 5.5vh;
-    margin: 0;
-}
-
 @media only screen and (max-width: 660px) {
     p, td {
         font-size: 1rem;
@@ -73,13 +67,23 @@ header {
     }
 }
 
-header nav{
+/* Header */
+header {
+    height: 5.5vh;
+    margin: 0;
+}
+
+nav.mobile {
+    display: none;
+}
+
+nav.computer {
     height: 100%;
     display: flex;
     justify-content: center;
 }
 
-header ul {
+nav.computer ul {
     width: 1210px;
     max-width: 95%;
     display: flex;
@@ -90,36 +94,74 @@ header ul {
     margin: 0;
 }
 
-header li {
+nav.computer li {
     display: block;
     font-size: 1.375rem;
 }
 
-header li.divider {
+nav.computer li.divider {
     font-weight: bolder;
 }
 
-header li.nav {
+nav.computer li.nav {
     padding: 5px 30px;
-    border-radius: 5%;
+    border-radius: 5px;
     text-align: center;
     transition: background-color 0.3s ease;
 }
 
-header li.nav:hover {
+nav.computer li.nav:hover {
     background-color: rgb(230, 230, 230);
     cursor: pointer;
 }
 
-header li.nav:active {
+nav.computer li.nav:active {
     background-color: #3E4756;
     color: white;
 }
 
 /* needs to be converted to a dropdown menu in the future */
 @media only screen and (max-width: 935px) {
-    header {
+    nav.computer {
         display: none;
+    }
+    
+    nav.mobile {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* flex-wrap: wrap; */
+    }
+
+    nav.mobile .dropdown-container {
+
+    }
+
+    .mobile a.dropdown-toggle {
+        background-color: rgb(203, 224, 224);
+        width: fit-content;
+        color: #3E4756;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 30px;
+        margin: auto;
+        border-radius: 5px;
+        box-sizing: border-box;
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+
+    .mobile a.dropdown-toggle:hover {
+        background-color: rgb(230, 230, 230);
+        cursor: pointer;
+    }
+
+    ul.dropdown-content {
+        /* display: none; */
+        /* position: absolute;
+        top: 100%; */
     }
 }
 
@@ -128,7 +170,7 @@ header li.nav:active {
     height: 94.5vh;
     max-width: 90%;
     margin: auto;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(192, 184, 184);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
