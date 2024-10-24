@@ -5,8 +5,9 @@ html {
     color: #3E4756;
 }
 
-p {
+p, td {
     font-size: 1.125rem; /* 18px */
+    line-height: 1.1;
 }
 
 h1 {
@@ -42,6 +43,34 @@ li {
 header {
     height: 5.5vh;
     margin: 0;
+}
+
+@media only screen and (max-width: 590px) {
+    p, td {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+    }
+    
+    h4 {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    h1 {
+        font-size: 4rem;
+    }
 }
 
 header nav{
@@ -85,6 +114,13 @@ header li.nav:hover {
 header li.nav:active {
     background-color: #3E4756;
     color: white;
+}
+
+/* needs to be converted to a dropdown menu in the future */
+@media only screen and (max-width: 935px) {
+    header {
+        display: none;
+    }
 }
 
 /* Hero section */
@@ -158,6 +194,12 @@ header li.nav:active {
     margin: 0 30px;
 }
 
+@media only screen and (max-width: 935px) {
+    #hero {
+        height: 100vh;
+    }
+}
+
 /* Portfolio section */
 
 #portfolio {
@@ -192,6 +234,7 @@ img.badminton, img.pcmod {
     flex-direction: column;
     justify-content: center;
     width: 586px;
+    max-width: 100%;
 }
 
 .project-info * {
@@ -231,11 +274,40 @@ img.html, img.css {
     color: #30507E;
 }
 
+@media only screen and (max-width: 1260px) {
+    #portfolio .work-panel {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 90%;
+    }
+
+    img.badminton, img.pcmod {
+        width: 100%;
+    }
+
+    .project-info {
+        width: fit-content;
+        align-items: center;
+    }
+
+    .project-info p {
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-info button {
+        font-size: 1rem;
+    }
+}
+
 /* About me section */
 #about-me {
     display: flex;
     justify-content: center;
     padding: 20px 0;
+    box-sizing: border-box;
 }
 
 #about-me .text {
@@ -256,8 +328,12 @@ img.html, img.css {
 
 #about-me .text h3 {
     width: 80%;
-    margin: 35px auto 5px;
+    margin: 10px auto 5px;
     text-align: center;
+}
+
+#about-me table {
+    width: 100%;
 }
 
 #about-me img {
@@ -272,8 +348,42 @@ td {
 
 td:first-child {
     text-align: right;
+    width: 25%;
 }
 
+@media only screen and (max-width: 1260px) {
+    #about-me {
+        flex-direction: column-reverse;
+        align-items: center;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    #about-me img {
+        width: 400px;
+        max-width: 80%;
+        margin-bottom: 5px;
+    }
+
+    #about-me .text {
+        border: none;
+        max-width: 80%;
+    }
+
+    #about-me .text p {
+        text-align: justify;
+    }
+
+    #about-me .text h2,
+    #about-me .text p,
+    #about-me .text table {
+        width: 100%;
+}
+}
+
+@media only screen and (max-width: 420px) {
+    
+}
 
 /* footer section */
 footer {
@@ -354,7 +464,7 @@ footer nav li:active {
     color: #30507E;
 }
 
-.socials h4, .socials div {
+.socials h4 {
     width: 100%;
     text-align: right;
 }
@@ -394,4 +504,35 @@ footer img {
 
 .socials .link a:active p {
     color: #30507E;
+}
+
+@media only screen and (max-width: 1260px) {
+    footer .panels-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .panel {
+        margin-bottom: 20px;
+    }
+
+    .send-message h4 {
+        text-align: center;
+    }
+
+    .socials h4 {
+        text-align: center;
+    }
+
+    .socials .link {
+        justify-content: center;
+    }
+    
+    .socials .link a {
+        justify-content: center;
+    }
+
+    footer p, footer label {
+        font-size: 0.875rem;
+    }
 }
