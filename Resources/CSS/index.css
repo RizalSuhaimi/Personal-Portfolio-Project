@@ -135,7 +135,6 @@ nav.computer li.nav:active {
     }
 
     #dropdown-toggle {
-        /* background-color: rgb(255, 197, 197); */
         width: fit-content;
         color: #3E4756;
         display: flex;
@@ -163,7 +162,6 @@ nav.computer li.nav:active {
         box-sizing: border-box;
         position: absolute;
         transform: translate(0, 43%);
-        /* background-color: rgb(48, 80, 126); */
         box-shadow: 0 0 30px rgba(48, 80, 126, 0.5);
         z-index: 10;
     }
@@ -181,6 +179,16 @@ nav.computer li.nav:active {
 
     .dropdown-content li:hover {
         background-color: rgb(230, 230, 230);
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .dropdown-content {
+        width: 163px;
+    }
+
+    .dropdown-content li {
+        font-size: 1rem;
     }
 }
 
