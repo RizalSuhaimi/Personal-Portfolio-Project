@@ -207,7 +207,7 @@ nav.computer li.nav:active {
     max-width: 90%;
     margin: auto;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     padding: 10px 0;
     box-sizing: border-box;
@@ -222,7 +222,6 @@ nav.computer li.nav:active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 0;
 }
 
 .hero-panel .tagline {
@@ -278,191 +277,6 @@ nav.computer li.nav:active {
     #hero {
         height: 94.5vh;
     }
-}
-
-/* Portfolio section */
-
-#portfolio {
-    background-color: rgb(226, 226, 226);
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0;
-    box-sizing: border-box;
-}
-
-#portfolio .work-panel {
-    display: flex;
-    justify-content: space-between;
-    width: 1210px;
-    box-sizing: border-box;
-    padding: 14px;
-    margin: 0 auto;
-    background-color: #30507E;
-    border-radius: 10px;
-    color: white;
-    margin: 15px auto 0;
-}
-
-img.badminton, img.pcmod {
-    display: block;
-    width: 586px;
-    height: auto;
-}
-
-.project-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 586px;
-    max-width: 100%;
-}
-
-.project-info * {
-    margin: 6px 0;
-}
-
-img.html, img.css {
-    width: 40px;
-    height: 40px;
-}
-
-.project-info a {
-    width: fit-content;
-    height: fit-content;
-}
-
-.project-info button {
-    padding: 10px;
-    margin: 0 auto;
-    background-color: #30507E;
-    border: 2px solid white;
-    border-radius: 4px;
-    box-sizing: border-box;
-    color: white;
-    font-size: 1.125rem;
-    font-family: Raleway;
-    font-weight: 550;
-}
-
-.project-info button:hover {
-    background-color: #3E4756;
-    cursor: pointer;
-}
-
-.project-info button:active {
-    background-color: #fff;
-    color: #30507E;
-}
-
-@media only screen and (max-width: 1260px) {
-    #portfolio .work-panel {
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 90%;
-    }
-
-    img.badminton, img.pcmod {
-        width: 100%;
-    }
-
-    .project-info {
-        width: fit-content;
-        align-items: center;
-    }
-
-    .project-info p {
-        text-align: justify;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .project-info button {
-        font-size: 1rem;
-    }
-}
-
-/* About me section */
-#about-me {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    box-sizing: border-box;
-}
-
-#about-me .text {
-    width: 605px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-left: 2px solid #30507E;
-}
-
-#about-me .text h2,
-#about-me .text p,
-#about-me .text table {
-    width: 80%;
-    margin: 5px auto;
-}
-
-#about-me .text h3 {
-    width: 80%;
-    margin: 10px auto 5px;
-    text-align: center;
-}
-
-#about-me table {
-    width: 100%;
-}
-
-#about-me img {
-    width: 605px;
-    height: auto;
-    border-radius: 10px;
-}
-
-td {
-    padding: 8px;
-}
-
-td:first-child {
-    text-align: right;
-    width: 25%;
-}
-
-@media only screen and (max-width: 1260px) {
-    #about-me {
-        flex-direction: column-reverse;
-        align-items: center;
-        max-width: 100%;
-        margin: auto;
-    }
-
-    #about-me img {
-        width: 400px;
-        max-width: 80%;
-        margin-bottom: 5px;
-    }
-
-    #about-me .text {
-        border: none;
-        max-width: 80%;
-    }
-
-    #about-me .text p {
-        text-align: justify;
-    }
-
-    #about-me .text h2,
-    #about-me .text p,
-    #about-me .text table {
-        width: 100%;
-}
-}
-
-@media only screen and (max-width: 420px) {
-    
 }
 
 /* footer section */
