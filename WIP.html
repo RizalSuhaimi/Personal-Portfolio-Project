@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of Rizal Suhaimi, showcasing projects in full-stack web development, and 3D game art">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="./Resources/CSS/reset.css" type="text/css">
+    <link rel="stylesheet" href="./Resources/CSS/WIP.css" type="text/css">
+
+    <!-- JS Links -->
+    <script src="./Resources/JS/index.js" defer></script>
+
+    <title>Rizal Suhaimi</title>
+</head>
+<body>
+    <header>
+        <nav class="computer">
+            <ul role="presentation">
+                <a href="./index.html"><li class="nav">Home</li></a>
+                <li class="divider">|</li>
+                <a href="./index.html#portfolio"><li class="nav">My Work</li></a>
+                <li class="divider">|</li>
+                <a href="./WIP.html"><li class="nav">DevLog</li></a>
+                <li class="divider">|</li>
+                <a href="./index.html#about-me"><li class="nav">About Me</li></a>
+                <li class="divider">|</li>
+                <a href="#footer"><li class="nav">Contact</li></a>
+                <li class="divider">|</li>
+                <a href="./WIP.html"><li class="nav">3D Art</li></a>
+            </ul>
+        </nav>
+
+        <nav class="mobile">
+            <a id="dropdown-toggle">
+                <p>Navigation</p>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#3E4756">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg>
+            </a>
+            <ul id="dropdown-content" class="dropdown-content" role="presentation">
+                <a href="./index.html"><li class="nav">Home</li></a>
+                <a href="./index.html#portfolio"><li class="nav">My Work</li></a>
+                <a href="./WIP.html"><li class="nav">DevLog</li></a>
+                <a href="./index.html#about-me"><li class="nav">About Me</li></a>
+                <a href="./index.html#footer"><li class="nav">Contact</li></a>
+                <a href="./WIP.html"><li class="nav">3D Art</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- hero section -->
+        <div id="hero">
+            <h2>This webpage is still a work in progress.</h2>
+        </div>
+    </main>
+    
+    <footer id="footer">
+        <div class="panels-container">
+            <div class="send-message panel">
+                <h4>Get in touch</h4>
+                <form id="contactForm" action="formTest.html" method="POST" >
+                    <section class="client-contact">
+                        <label for="email">Email:</label>
+                        <br>
+                        <input type="text" name="email" id="email" placeholder="abc123@email.com">
+                    </section>
+                    <section class="client-message">
+                        <label for="message">Message:</label>
+                        <br>
+                        <textarea name="message" id="message" rows="3">
+                        </textarea>
+                    </section>
+                    <section class="submission">
+                        <input type="submit" value="Send">
+                    </section>
+                </form>
+            </div>
+            <nav class="nav panel">
+                <h4>Navigation</h4>
+                <ul>
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./index.html#portfolio"><li>My Work</li></a>
+                    <a href="./WIP.html"><li>DevLog</li></a>
+                    <a href="./index.html#about-me"><li>About Me</li></a>
+                    <a href="#footer"><li>Contact</li></a>
+                    <a href="./WIP.html"><li>3D Art</li></a>
+                </ul>
+            </nav>
+            <div class="socials panel">
+                <h4>Social Links</h4>
+                <div class="link linkedin">
+                    <a href="https://www.linkedin.com/in/rizal-ms/" target="_blank" rel="noopener noreferrer">
+                        <img src="./Resources/Images/LinkedIn_Logo.png">
+                        <p>LinkedIn</p>
+                    </a>
+                </div>
+                <div class="link youtube">
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="./Resources/Images/YouTube_Logo.webp">
+                        <p>YouTube</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
